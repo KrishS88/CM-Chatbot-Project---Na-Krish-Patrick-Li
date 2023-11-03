@@ -9,6 +9,11 @@
 }
 body {
   background: #E3F2FD;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
 }
 .chatbot-toggler {
   position: fixed;
@@ -41,20 +46,13 @@ body.show-chatbot .chatbot-toggler span:last-child {
   opacity: 1;
 }
 .chatbot {
-  position: fixed;
-  right: 35px;
-  bottom: 90px;
+  position: flex;
   width: 420px;
   background: #fff;
   border-radius: 15px;
   overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(0.5);
-  transform-origin: bottom right;
   box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
               0 32px 64px -48px rgba(0,0,0,0.5);
-  transition: all 0.1s ease;
 }
 body.show-chatbot .chatbot {
   opacity: 1;
@@ -139,7 +137,6 @@ header h2 {
 .chatbot .chat-input {
   display: flex;
   gap: 5px;
-  position: absolute;
   bottom: 0;
   width: 100%;
   background: #fff;
