@@ -1,0 +1,101 @@
+/* Styles for the page title */
+header {
+  background-color: #660708; /* Background color for the title */
+}
+.page-title {
+  text-align: center; /* Center the title horizontally */
+  margin-top: 0px; /*Add some top margin for spacing */
+  z-index: 2; /* Ensure the title is above other elements */
+  color: white; /* Text color for the title */
+}
+
+h1 {
+font-family: "Perpetua Titling MT", serif;
+font-size: 36px; /* Adjust the font size as needed */
+}
+
+h2 {
+font-family: "Perpetua", serif;
+font-size: 30px; /* Adjust the font size as needed */
+}
+
+.message, .user-message, .chatgpt-message {
+font-family: "Rockwell";
+}
+
+/* Styles for chat messages */
+.message {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Styles for user messages */
+.user-message {
+  text-align: right;
+  font-size: 20px;
+  background-color: #161A1D;
+  color: white;
+}
+
+/* Styles for chatbot messages */
+.chatgpt-message {
+  background-color: #e0e0e0;
+  color: black;
+  background-color: #e0e0e0;
+  color: black;
+  text-align: left;
+  font-size: 20px;
+}
+
+/* Styles for the body background */
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  opacity: 0.90; /* Adjust the opacity as needed */
+}
+
+
+
+/* Styles for user input field */
+#user-message {
+  height: 50px; /* Adjust the height as needed */
+  width: 89%; /* Set the width to 100% to make it full width */
+  font-size: 20px; /* Adjust the font size as needed */
+}
+
+/* Styles for the send button */
+#send {
+  height: 50px; /* Match the height of the user-message input */
+  width: 9%; /* Set the width to 100% to make it full width */
+  font-size: 20px; /* Adjust font size as needed */
+}
+
+/* Styles for the typing indicator container */
+.ticontainer {
+  display: none; /* Initially hidden */
+  align-items: center;
+  background-color: #e0e0e0;
+  color: black;
+  text-align: left;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px; /* Add border-radius to make the background rounded */
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  height: 100vh;
+}
+.chat-container {
+  grid-column: 1/2;
+  padding: 10px;
+}

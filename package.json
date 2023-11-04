@@ -1,15 +1,20 @@
 {
-  "name": "cs-1331-hw",
+  "name": "wednesday-addams-chatbot",
   "version": "1.0.0",
   "description": "",
-  "main": "test.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Lija",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "openai": "^4.14.2"
+    "define-data-property": "^1.1.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "langchain": "^0.0.180",
+    "openai": "^4.12.4"
   }
 }
