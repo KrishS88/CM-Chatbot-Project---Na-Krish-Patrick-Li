@@ -78,13 +78,12 @@ header h2 {
 .chatbox .incoming span {
   width: 32px;
   height: 32px;
+  border-radius: 49px;
   color: #E7EAEF;
   cursor: default;
   text-align: center;
   line-height: 32px;
   align-self: flex-end;
-  border-radius: 49px;
-  background: url(profile.jpg) cover;
   margin: 0 10px 7px 0;
 }
 .chatbox .chat p {
@@ -138,10 +137,6 @@ header h2 {
 }
 .chat-input textarea:valid ~ span {
   visibility: visible;
-}
-
-.profile-pic {
-  background-image: url(profile.jpg) cover;
 }
 
 @media (max-width: 490px) {
