@@ -1,101 +1,41 @@
-/* Styles for the page title */
-header {
-  background-color: #660708; /* Background color for the title */
-}
-.page-title {
-  text-align: center; /* Center the title horizontally */
-  margin-top: 0px; /*Add some top margin for spacing */
-  z-index: 2; /* Ensure the title is above other elements */
-  color: white; /* Text color for the title */
+.container {
+  display: flex;
+  justify-content: space-evenly; /* Center children horizontally */
+  min-height: 100vh;       /* Make the container at least the height of the viewport */
+  padding: 50px;           /* Add some padding around the children */
+  box-sizing: border-box;  /* Include padding in the total width and height */
 }
 
 h1 {
-font-family: "Perpetua Titling MT", serif;
-font-size: 36px; /* Adjust the font size as needed */
+  font-family: "Griffy";
 }
 
-h2 {
-font-family: "Perpetua", serif;
-font-size: 30px; /* Adjust the font size as needed */
-}
-
-.message, .user-message, .chatgpt-message {
-font-family: "Rockwell";
-}
-
-/* Styles for chat messages */
-.message {
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-/* Styles for user messages */
-.user-message {
-  text-align: right;
-  font-size: 20px;
-  background-color: #161A1D;
+body {
+  background-color: rgb(79, 79, 79);
   color: white;
 }
 
-/* Styles for chatbot messages */
-.chatgpt-message {
-  background-color: #e0e0e0;
-  color: black;
-  background-color: #e0e0e0;
-  color: black;
-  text-align: left;
-  font-size: 20px;
+.chatbot {
+  transform: translateY(60%);
 }
 
-/* Styles for the body background */
-body {
-  margin: 0;
-  padding: 0;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; /* Keeps the background fixed when scrolling */
-  opacity: 0.90; /* Adjust the opacity as needed */
+.wednesday {
+  
 }
 
-
-
-/* Styles for user input field */
-#user-message {
-  height: 50px; /* Adjust the height as needed */
-  width: 89%; /* Set the width to 100% to make it full width */
-  font-size: 20px; /* Adjust the font size as needed */
+.fixed-container {
+  position: absolute; /* Fixed positioning */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Span the full width of the viewport */
+  height: 100%; /* Span the full height of the viewport */
+  pointer-events: none; /* This will allow click events to pass through to elements behind */
 }
 
-/* Styles for the send button */
-#send {
-  height: 50px; /* Match the height of the user-message input */
-  width: 9%; /* Set the width to 100% to make it full width */
-  font-size: 20px; /* Adjust font size as needed */
-}
-
-/* Styles for the typing indicator container */
-.ticontainer {
-  display: none; /* Initially hidden */
-  align-items: center;
-  background-color: #e0e0e0;
-  color: black;
-  text-align: left;
-  font-size: 20px;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px; /* Add border-radius to make the background rounded */
-}
-
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  padding: 10px;
-  height: 100vh;
-}
-.chat-container {
-  grid-column: 1/2;
-  padding: 10px;
+.web {
+  position: absolute; /* Absolute position within the fixed container */
+  top: 0; /* Align to the top of the fixed container */
+  left: 0; /* Align to the left of the fixed container */
+  width: 250px; /* Set the width */
+  height: 377.6px; /* Set the height */
 }

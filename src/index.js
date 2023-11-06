@@ -41,7 +41,7 @@ const handleChat = async () => {
     console.log("Button function success!");
 
     const data = {
-        input_text: "Write a brief bio about yourself."
+        input_text: document.getElementById("textbox1").value
     };
 
     try {
