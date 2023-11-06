@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: space-evenly; /* Center children horizontally */
+  min-height: 100vh;       /* Make the container at least the height of the viewport */
+  padding: 50px;           /* Add some padding around the children */
+  box-sizing: border-box;  /* Include padding in the total width and height */
+}
+
+h1 {
+  font-family: "Griffy";
+}
+
+body {
+  background-color: rgb(79, 79, 79);
+  color: white;
+}
+
+.chatbot {
+  transform: translateY(60%);
+}
+
+.wednesday {
+  
+}
+
+.fixed-container {
+  position: absolute; /* Fixed positioning */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Span the full width of the viewport */
+  height: 100%; /* Span the full height of the viewport */
+  pointer-events: none; /* This will allow click events to pass through to elements behind */
+}
+
+.web {
+  position: absolute; /* Absolute position within the fixed container */
+  top: 0; /* Align to the top of the fixed container */
+  left: 0; /* Align to the left of the fixed container */
+  width: 250px; /* Set the width */
+  height: 377.6px; /* Set the height */
+}
