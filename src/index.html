@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - www.codingnepalweb.com -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -7,32 +6,29 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Griffy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="index.js" defer></script>
   </head>
   <body>
-    <div class="fixed-container">
-        <img src="web.png" id="web" style="width:250px;height:377.6px">
-    </div>
+    <img src="web.png" id="web" style="width:250px;height:377.6px;position: fixed;z-index: -1;">
     <div class="container">
-        <div>
-            <img src="Wednesday.png" id="wednesday" style="width:500px;height:692;">
+      <div style="display: flex; flex-direction: column; align-items: center; max-width: 30%; max-height: 720px;">
+        <img src="Wednesday.png" style="flex: 1 0 0; align-self: stretch; max-height: 629px;">
+        <h1>Wednesday Addams</h1>
+      </div>
+      <div class="chatbot">
+        <ul class="chatbox" style="width: 100%; margin: 0; overflow: auto; padding: 0px 8px;">
+          <li class="chat incoming">
+            <p>Greetings. My name is Wednesday Addams.<br>What do you want?</p>
+          </li>
+        </ul>
+        <div class="chat-input">
+          <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded" style="cursor: pointer;">send</span>
         </div>
-        <div class="chatbot">
-            <div>
-                <h1>Wednesday Addams</h1>
-            </div>
-            <ul class="chatbox">
-            <li class="chat incoming">
-                <p>Greetings. My name is Wednesday Addams.<br>What do you want?</p>
-            </li>
-            </ul>
-            <div class="chat-input">
-            <input type="text" id="textbox1" placeholder="Enter a message..." spellcheck="false" required></input>
-            <button id="send-btn" class="material-symbols-rounded">send</button>
-            </div>
-        </div>
+      </div>
     </div>
   </body>
 </html>

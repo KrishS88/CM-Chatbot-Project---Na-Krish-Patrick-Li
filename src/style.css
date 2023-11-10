@@ -1,35 +1,123 @@
+body {
+  background-color: #424242;
+  color: white;
+  margin: 0;
+  height: 100vh;
+}
+
 .container {
   display: flex;
-  justify-content: space-evenly; /* Center children horizontally */
-  min-height: 100vh;       /* Make the container at least the height of the viewport */
-  padding: 50px;           /* Add some padding around the children */
-  box-sizing: border-box;  /* Include padding in the total width and height */
+  align-items: center;
+  height: 100%;
+  justify-content: center; /* Center children horizontally */    
+  gap: 48px;
 }
 
 h1 {
-  font-family: "Griffy";
-}
-
-body {
-  background-color: rgb(79, 79, 79);
-  color: white;
+  font-family: "Inter";
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .chatbot {
-  transform: translateY(60%);
+  background: #333;
+  border: 1px solid #5b5b5b;
+  display: flex;
+  height: 100%;
+  max-height: 714px;
+  width: 30%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
 }
 
-.wednesday {
-  
+.chatbot :where(.chatbox, textarea)::-webkit-scrollbar {
+  width: 6px;
+}
+.chatbot :where(.chatbox, textarea)::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 25px;
+}
+.chatbot :where(.chatbox, textarea)::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 25px;
+}
+
+.chat-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  gap: 12px;
+}
+
+.chat-input textarea {
+  background: rgb(255, 255, 255, 0.1);
+  color: #D9D9D9;
+  height: 26px;
+  width: 100%;
+  justify-content: center;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: "Arial"; 
+  font-size: 14px;
+  padding: 12px 10px 0px 10px;
+}
+
+.chatbox .outgoing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: stretch;
+}
+
+.chatbox .incoming {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.chatbox .incoming p {
+  display: flex;
+  max-width: 75%;
+  padding: 10px;
+  align-items: center;
+  border-radius: 12px 12px 12px 0px;
+  background: #1E1E1E;
+  margin: 0px;
+  margin: 12px 0px 0px 0px;
+  font-family: "Inter";
+  font-size: 0.9em;
+}
+
+.chatbox .outgoing p {
+  display: flex;
+  max-width: 75%;
+  justify-content: flex-end;
+  padding: 10px;
+  border-radius: 12px 12px 0px 12px;
+  background: #D9D9D9;
+  color: #1E1E1E;
+  margin: 12px 0px 0px 0px;
+  font-family: "Inter";
+  font-size: 0.9em;
 }
 
 .fixed-container {
-  position: absolute; /* Fixed positioning */
-  top: 0; /* Align to the top */
-  left: 0; /* Align to the left */
-  width: 100%; /* Span the full width of the viewport */
-  height: 100%; /* Span the full height of the viewport */
-  pointer-events: none; /* This will allow click events to pass through to elements behind */
+  z-index: -1; /* Moved spiderweb to the back */
 }
 
 .web {
